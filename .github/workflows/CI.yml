@@ -29,6 +29,10 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
+      - name: Output results
+        run: | 
+          echo "## Build results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
   test:
     name: Run tests
     runs-on: self-hosted
@@ -59,6 +63,10 @@ jobs:
         with:
           name: test-results
           path: ./test-results.xml
+      - name: Output results
+        run: | 
+          echo "## Test results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
   coverage:
     name: Coverage
     runs-on: self-hosted
@@ -83,3 +91,7 @@ jobs:
           yarn add typescript
       - name: Run tests with coverage
         run: yarn run coverage
+      - name: Output results
+        run: | 
+          echo "## Coverage results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY      
