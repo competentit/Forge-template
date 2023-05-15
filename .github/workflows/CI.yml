@@ -30,10 +30,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Output success results
-        run: echo "::set-output name=Success::✅ Passed >> $GITHUB_STEP_SUMMARY"
+        run: echo "::set-output name=Success::✅ Passed
         if: ${{ success() }}
       - name: Output failure results
-        run: echo "::set-output name=Fail::❌ Failure >> $GITHUB_STEP_SUMMARY"
+        run: echo "::set-output name=Fail::❌ Failure"
         if: ${{ failure() }}
   test:
     name: Run tests
@@ -60,10 +60,10 @@ jobs:
       - name: Run tests
         run: yarn run test
       - name: Output success results
-        run: echo "::set-output name=Success::✅ Passed >> $GITHUB_STEP_SUMMARY"
+        run: echo "::set-output name=Success::✅ Passed"
         if: ${{ success() }}
         - name: Output failure results
-        run: echo "::set-output name=Fail::❌ Failure >> $GITHUB_STEP_SUMMARY"
+        run: echo "::set-output name=Fail::❌ Failure"
         if: ${{ failure() }}
   coverage:
     name: Coverage
@@ -90,8 +90,8 @@ jobs:
       - name: Run tests with coverage
         run: yarn run coverage
       - name: Output success results
-        run: echo "::set-output name=Success::✅ Passed >> $GITHUB_STEP_SUMMARY"
+        run: echo "::set-output name=Success::✅ Passed"
         if: ${{ success() }}
       - name: Output failure results
-        run: echo "::set-output name=Fail::❌ Failure >> $GITHUB_STEP_SUMMARY"
+        run: echo "::set-output name=Fail::❌ Failure"
         if: ${{ failure() }}
