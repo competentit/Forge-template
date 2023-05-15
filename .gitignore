@@ -26,17 +26,3 @@ gas-profile-report.txt
 
 # JUnit report
 test-results.xml
-
-# another 
-_diag/
-_work/
-bin/
-externals
-actions-runner-linux-x64-2.304.0.tar.gz
-config.sh
-env.sh
-run-helper.cmd.template
-run-helper.sh.template
-run.sh
-safe_sleep.sh
-.path
