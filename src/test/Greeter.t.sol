@@ -5,7 +5,7 @@ import {DSTest} from "ds-test/test.sol";
 import {Utilities} from "./utils/Utilities.sol";
 import {console} from "./utils/Console.sol";
 import {Vm} from "forge-std/Vm.sol";
-import {Greeter} from "../Greeter.sol";
+import {Greeter} from "../contracts/Greeter.sol";
 
 contract ContractTest is DSTest {
     Vm internal immutable vm = Vm(HEVM_ADDRESS);
