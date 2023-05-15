@@ -62,7 +62,7 @@ jobs:
       - name: Output success results
         run: echo "::set-output name=Success::✅ Passed"
         if: ${{ success() }}
-        - name: Output failure results
+      - name: Output failure results
         run: echo "::set-output name=Fail::❌ Failure"
         if: ${{ failure() }}
   coverage:
