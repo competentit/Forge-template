@@ -82,7 +82,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install --immutable
-          yarn adda typescript
+          yarn add typescript
       - name: Run tests with coverage
         run: yarn run coverage
       - name: Output results
