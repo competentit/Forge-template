@@ -30,7 +30,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
       - name: Output success results
-        run: echo "::set-output name=Success::✅ Passed
+        run: echo "::set-output name=Success::✅ Passed"
         if: ${{ success() }}
       - name: Output failure results
         run: echo "::set-output name=Fail::❌ Failure"
