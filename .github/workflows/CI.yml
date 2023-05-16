@@ -29,12 +29,10 @@ jobs:
           key: ${{ runner.os }}-yarn-${{ hashFiles('/yarn.lock') }}
           restore-keys: |
             ${{ runner.os }}-yarn-
-      - name: Output success results
-        run: echo "::set-output name=Success::✅ Passed"
-        if: ${{ success() }}
-      - name: Output failure results
-        run: echo "::set-output name=Fail::❌ Failure"
-        if: ${{ failure() }}
+      - name: Output results
+        run: |
+          echo "## Build results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
   test:
     name: Run tests
     runs-on: self-hosted
@@ -59,12 +57,10 @@ jobs:
           yarn add typescript
       - name: Run tests
         run: yarn run test
-      - name: Output success results
-        run: echo "::set-output name=Success::✅ Passed"
-        if: ${{ success() }}
-      - name: Output failure results
-        run: echo "::set-output name=Fail::❌ Failure"
-        if: ${{ failure() }}
+      - name: Output results
+        run: |
+          echo "## Test results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
   coverage:
     name: Coverage
     runs-on: self-hosted
@@ -89,9 +85,7 @@ jobs:
           yarn adda typescript
       - name: Run tests with coverage
         run: yarn run coverage
-      - name: Output success results
-        run: echo "::set-output name=Success::✅ Passed"
-        if: ${{ success() }}
-      - name: Output failure results
-        run: echo "::set-output name=Fail::❌ Failure"
-        if: ${{ failure() }}
+      - name: Output results
+        run: |
+          echo "## Coverage results" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Passed" >> $GITHUB_STEP_SUMMARY
