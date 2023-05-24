@@ -67,7 +67,7 @@ body:
       required: true
   # steps
   - type: textarea
-    id: steps
+    id: to-do
     attributes:
       label: Опишите в правильном порядке действия выполняемые в примере
       description: Перечислите в правильном порядке, как вы пришли к подобному поведению функционала
