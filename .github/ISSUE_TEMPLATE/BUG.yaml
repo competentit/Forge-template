@@ -65,17 +65,14 @@ body:
       placeholder: 0xe6fda240c27497f6a6644565ecae273bc78pff28c2Аa1a5ed65ed0ee4dce1d96
     validations:
       required: true
-  # steps
+  # other
   - type: textarea
-    id: to-do
+    id: additional
     attributes:
-      label: Опишите в правильном порядке действия выполняемые в примере
-      description: Перечислите в правильном порядке, как вы пришли к подобному поведению функционала
+      label: Дополнительная информация
+      description: Приведите дополнительную информацию для воспроизведения текущего поведения
       placeholder: |
-        Пример: 
-        1) Нажал на кнопку 
-        2) Ввел в поле значение
-        3) ...
+        id, апрувы и т.д.
     validations:
       required: true
   # 6
