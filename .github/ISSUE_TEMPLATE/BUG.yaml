@@ -46,7 +46,7 @@ body:
   # 5
   - type: markdown
     attributes:
-      value: Пример
+      value: "##Пример"
   # pub
   - type: input
     id: public-key
