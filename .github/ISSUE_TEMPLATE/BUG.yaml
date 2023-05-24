@@ -53,7 +53,7 @@ body:
     attributes:
       label: Публичный ключ используемого аккаунта
       description: Заполните форму, вставив ключ аккаунта, от имени которого совершались транзакции
-      placeholder: 0xe6fda240c27497f6a6644565ecae273bc78pff28c2Аa1a5ed65ed0ee4dce1d96
+      placeholder: "0xC5337F68DC963E0BaFe6DCAf8F32002D9056F604"
     validations:
       required: true
   # private
