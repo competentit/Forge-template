@@ -3,13 +3,10 @@ description: Простой отчет
 title: "[ Custom ]: -"
 labels: ["bug", "triage"]
 body:
-  - type: markdown
-    attributes:
-      value: "### Issue: Шаблон простого отчета."
-
   - type: textarea
     id: main-area
     attributes:
+      label: "### Issue: Шаблон простого отчета."
       description: "Приведите любую информацию"
       placeholder: " "
     validations:
