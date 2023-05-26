@@ -8,6 +8,5 @@ body:
     attributes:
       label: "### Issue: Шаблон простого отчета."
       description: "Приведите любую информацию"
-      placeholder: " "
     validations:
       required: true
