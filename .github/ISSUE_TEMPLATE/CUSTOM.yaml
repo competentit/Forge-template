@@ -1,6 +1,6 @@
 name: Custom Report
 description: Простой отчет
-title: "[ ]: -"
+title: "[ Custom ]: -"
 labels: ["bug", "triage"]
 body:
   - type: markdown
