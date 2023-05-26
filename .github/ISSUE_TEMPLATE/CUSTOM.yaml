@@ -1,14 +1,16 @@
 name: Custom Report
 description: Простой отчет
 title: "[ ]: -"
-labels: ["Custom", "triage"]
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
-      value: "## Issue: Шаблон простого отчета"
+      value: "### Issue: Шаблон простого отчета."
+
   - type: textarea
     id: main-area
     attributes:
-      description: Приведите любую информацию
+      description: "Приведите любую информацию"
+      placeholder: " "
     validations:
       required: true
