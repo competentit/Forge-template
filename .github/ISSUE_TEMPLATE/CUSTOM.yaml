@@ -1,6 +1,6 @@
-name: Custom Report
+name: Tast Report
 description: Простой отчет
-title: "[ Custom ]: -"
+title: "[ Task ]: -"
 body:
   - type: textarea
     id: main-area
