@@ -1,0 +1,30 @@
+name: Feature Report
+description: Добавление функционала
+title: "[ Feature  ]: -"
+body:
+  #1
+  - type: textarea
+    id: short-description
+      attributes:
+        label: 
+        description: Дайте краткое описание бизнес процесса
+        placeholder: Краткое описание назначения БП.
+      validations:
+        required: true
+  #2 
+  - type: textarea
+    id: participants
+      attributes:
+        label: 
+        description: Укажите участников БП
+        placeholder: | 
+          "Например:
+            - Пользователь  
+            - Администратор
+            - Граф
+            - Бот
+            - Внешний контракт (контракт другого продукта)
+            - Внешний сервис
+            - др."
+      validations:
+        required: true
