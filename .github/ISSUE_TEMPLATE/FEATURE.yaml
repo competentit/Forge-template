@@ -144,7 +144,7 @@ body:
     attributes:
       label: 4.2 Поведение элементов управления
       description:
-      placeholder: |
+      value: |
         "<details> 
         <summary>посмотреть</summary>
 
