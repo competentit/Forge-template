@@ -2,12 +2,15 @@ name: Feature Report
 description: Добавление функционала
 title: "[ Feature  ]: -"
 body:
+  - type: markdown
+    attributes:
+      value: "## 1. Определение"
   #1
   - type: textarea
     id: short-description
     attributes:
-      label: Краткое описание БП
-      description: Дайте краткое описание Бизнес Процесса
+      label: 1.1. Краткое описание БП
+      description: Дайте краткое описание бизнес процесса
       placeholder: Краткое описание назначения БП.
     validations:
       required: true
@@ -15,16 +18,58 @@ body:
   - type: textarea
     id: participants
     attributes:
-      label: Укажите участников БП
-      description: Перечислите участников Бизнес процесса, связанные с этой фичей
+      label: 1.2. Участники БП
+      description: Перечислите участников бизнес процесса, связанные с этим бизнес процессом
       placeholder: |
-        "Например:
+        Например:
           - Пользователь  
           - Администратор
           - Граф
           - Бот
           - Внешний контракт (контракт другого продукта)
           - Внешний сервис
-          - др."
+          - др.
+    validations:
+      required: true
+  #3
+  - type: textarea
+    id: state
+    attributes:
+      label: 1.3. Предварительное состояние (когда доступна)
+      description: Укажите начальные условия выполнения
+      placeholder: |
+        Откуда запускается БП
+        Условия при котором БП доступен для исполнения
+    validations:
+      required: true
+  #4
+  - type: textarea
+    id: launch-state
+    attributes:
+      label: 1.4. Запускающее событие
+      description: Укажите какое событие будет запуска этот бизнес процесс
+      placeholder: |
+        Что запускает БП: например переход проекта в другой этап или 
+        изменение значения флага администратором.
+    validations:
+      required: true
+  #5
+  - type: textarea
+    id: aim
+    attributes:
+      label: 1.5. Цели
+      description: Укажите результат, который вы хотели получить по итогу бизнес процесса
+      placeholder: |
+        Что должно произойти по итогу БП
+    validations:
+      required: true
+  #6
+  - type: textarea
+    id: result-state
+    attributes:
+      label: 1.6. Результирующее состояние
+      description: Укажите, что будет отображаться по итогу бизнес процесса
+      placeholder: |
+        Что отображается после БП.
     validations:
       required: true
