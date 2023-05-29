@@ -140,7 +140,7 @@ body:
       required: true
   #4.2
   - type: textarea
-    id: Performance
+    id: Behaviour
     attributes:
       label: 4.2 Поведение элементов управления
       description:
