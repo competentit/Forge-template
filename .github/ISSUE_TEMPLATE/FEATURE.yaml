@@ -137,7 +137,7 @@ body:
       label: 4.1 Представление
       description: Графической отображение интерфейса с кодами для описания интерфейса (мокап).
     validations:
-      required: true
+      required: false
   #4.2
   - type: textarea
     id: Behaviour
@@ -156,7 +156,7 @@ body:
           
         </details>"
     validations:
-      required: true
+      required: false
   #4.3
   - type: textarea
     id: picture
@@ -164,4 +164,4 @@ body:
       label: 4.3 Изображения дизайна
       description: Добавьте изображения, скриншоты дизайна.
     validations:
-      required: true
+      required: false
