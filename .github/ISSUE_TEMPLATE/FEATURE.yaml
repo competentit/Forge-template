@@ -6,8 +6,8 @@ body:
   - type: textarea
     id: short-description
     attributes:
-      label:
-      description: Дайте краткое описание бизнес процесса
+      label: Краткое описание БП
+      description: Дайте краткое описание Бизнес Процесса
       placeholder: Краткое описание назначения БП.
     validations:
       required: true
@@ -15,8 +15,8 @@ body:
   - type: textarea
     id: participants
     attributes:
-      label:
-      description: Укажите участников БП
+      label: Укажите участников БП
+      description: Перечислите участников Бизнес процесса, связанные с этой фичей
       placeholder: |
         "Например:
           - Пользователь  
