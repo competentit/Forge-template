@@ -27,7 +27,7 @@ body:
       required: true
   # 3
   - type: textarea
-    id: curret-behaviour
+    id: current-behaviour
     attributes:
       label: Какое текущее поведение функционала?
       description: Результат, полученный после прохождения шагов к воспроизведению
@@ -74,7 +74,7 @@ body:
       placeholder: |
         id, апрувы и т.д.
     validations:
-      required: true
+      required: false
   # 6
   - type: textarea
     id: other-info
@@ -83,4 +83,4 @@ body:
       description: артефакты для анализа
       placeholder:
     validations:
-      required: true
+      required: false

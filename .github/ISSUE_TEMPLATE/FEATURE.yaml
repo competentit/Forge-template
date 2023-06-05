@@ -1,4 +1,4 @@
-name: Feature Report
+name: Feature
 description: Добавление функционала
 title: "[ Feature  ]: -"
 body:
@@ -115,7 +115,7 @@ body:
     id: tokenomics
     attributes:
       label: 3.2 Токеномика
-      description: Приведите данные об токеномике
+      description: Приведите данные о токеномике
     validations:
       required: true
   #3.3
@@ -125,7 +125,7 @@ body:
       label: 3.3 Дополнительные формулы расчета и модели поведения
       description: Приведите дополнительные данные для подробного описания модели и поведения
     validations:
-      required: true
+      required: false
   #4
   - type: markdown
     attributes:
@@ -144,7 +144,7 @@ body:
     attributes:
       label: 4.2 Поведение элементов управления
       description:
-      value: |
+      placeholder: |
         >| Название | Тип | Поведение | Комментарий |
         >|:-:|:-:|:-:|:-:|
         >|команда [наименование команды](#31-наименования-команды)| кнопка | дизеблится если не выполнено предварительное состояние | - |  
