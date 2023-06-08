@@ -125,7 +125,7 @@ body:
       label: 3.3 Дополнительные формулы расчета и модели поведения
       description: Приведите дополнительные данные для подробного описания модели и поведения
     validations:
-      required: false
+      required: true
   #4
   - type: markdown
     attributes:
@@ -137,7 +137,7 @@ body:
       label: 4.1 Представление
       description: Графической отображение интерфейса с кодами для описания интерфейса (мокап).
     validations:
-      required: false
+      required: true
   #4.2
   - type: textarea
     id: Behaviour
@@ -151,7 +151,7 @@ body:
         >| поле FOO | текст | не редактируется | - |
         >| поле FOO | список с поиском | Видим и доступен всегда | список пользователей в роли `Менеджер` |
     validations:
-      required: false
+      required: true
   #4.3
   - type: textarea
     id: picture
@@ -159,4 +159,17 @@ body:
       label: 4.3 Изображения дизайна
       description: Добавьте изображения, скриншоты дизайна.
     validations:
-      required: false
+      required: true
+  #5
+  - type: markdown
+    attributes:
+      value: "## 5. Tasks list"
+  - type: textarea
+    id: task-list
+    attributes:
+      label: 5.1 Tasks list
+      placeholder: |
+        - [ ] Task first
+        - [ ] Task second
+    validations:
+      required: true
