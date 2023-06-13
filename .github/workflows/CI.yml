@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - competentit-dev
 
 jobs:
   build:
